@@ -43,13 +43,11 @@ Not just concerned with the technical process of software production, this cours
 
 On successful completion of this module a student will be able to:
 
-[1] Identify appropriate software engineering methods for a given project.
+[1] Understand the key concepts of the analysis, design, development and maintenance of complex software systems and infrastructures
 
-[2] Demonstrate an understanding of the difference between software methods and their suitability to different software development projects.
+[2] Understand the software lifecycle and its stages and utilise these in the development of software process models
 
-[3] Demonstrate effective requirements engineering skills and an appreciation of their importance in the lifecycle of a software project.
-
-[4] Clearly identify the means by which the outcomes of a software project can be verified and validated.
+[3] Define and conduct software tests in order to evaluate and verify software products.
 
 ---
 
@@ -57,32 +55,35 @@ On successful completion of this module a student will be able to:
 
 A range of software engineering topics including:
 
-• Software Engineering Methods
-• Feasibility Assessment
-• Requirements Engineering
-• Systems Design
-• Verification and Validation
+- Key concepts in Software Engineering.
+- Tools and Environments.
+- Project Management.
+- Software Process Models.
+- Software Analysis and Design using UML.
+- Software Requirements, analysis, validation and management.
+- Software Design, design concepts, design patterns.
+- Software Testing, testing approaches, testing levels (unit, integration, system, acceptance).
+- Software Analysis, program optimisation and correctness, static and dynamic analysis.
+- Software Maintenance, corrective, adaptive, perfective and preventive maintenance.
+- Software Quality Management, assurance, planning, control.
+- Agile Software Development, methods and practices.
 
 --- 
 
 
 ## Teaching and Learning Activities
 
-The overall challenge will be to produce an item of software (examples such as a patient records database for a hospital, or an information retrieval program for a technical library). The example will involve a specification that is aimed to bring out the different aspects of the system design and development process. From specification changes to bugs on the original role out and changes in platform.
+- Lectures introducing the theoretical foundations of Software Engineering, illustrating key challenges and issues with the design, development and maintenance of large software systems and infrastructures.
+
+- Laboratory sessions focused on applying the concepts discussed during lectures and improving the skills in problem solving and team management.
 
 
 ---
 
 ## Assessments 
-Remember this is a 30 credit module!
 
-- Group Project - 40% weighting, 40% pass mark.
-  - Page Length - 7 pages per student in the group with the potential for 5 additional pages for material that will not fit into the regular paper format.
-  - Outline Details - A project undertaken across the course demonstrating a practical understanding of the taught content.
+- Coursework: 100% weighting, 40% pass mark.
+- Learning Outcomes: 1, 2 &3.
+- Outline Details: An individual report based on a case study analysis. Maximum 3000 words.
 
-  - This will be assessed by formal report using the ACM CHI publication format.
-
-
-- Examination - 60% weighting, 40% pass mark.
-
-Formative Asessment - Tutorial sessions, Mock Exam.
+- Formative Assessment: Discussions during weekly lectures and laboratory sessions, feedback provided during these sessions.
