@@ -53,25 +53,62 @@ math: true
 
 ---
 
+## COCOMO (Constructive Cost Model)
 
-## Software Cost Formula
+COCOMO is a software cost estimation model developed by Barry Boehm in 1981. It estimates the effort, cost, and time required to develop a software system based on project size.
 
-$$ E = a \cdot (KLOC)^b \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \  T = c \cdot (E)^d$$
+- Three COCOMO Models
 
-Where: 
-- E = Effort, T = Development Time, 
-- KLOC = Thousands of Lines of Code
-- $a$, $b$, $c$ and $d$ are constants defined below:
+  1. **Basic COCOMO**: Rough estimation based on project size.
+  2. **Intermediate COCOMO**: Considers cost drivers like hardware constraints, team experience.
+  3. **Detailed COCOMO (COCOMO II)**: Adds more precision with lifecycle phases.
 
-<div align="center" >
- 
-| Software Project| a|b|c|d|
-|---|---|---|---|---|
-|Organic|3.2|1.05|2.5|0.38|
-|Semi-detached|3|1.12|2.5|0.35|
-|Embedded|2.8|1.20|2.5|0.32|
+---
 
-</div>
+## Key Components of COCOMO
+
+1. **Size Estimation** (in KLOC - thousand lines of code)
+   - Example: A project with 25,000 lines of code is 25 KLOC.
+   
+2. **Effort Equation**: 
+   - Effort (in person-months) = `a * (KLOC)^b`
+   - Constants **a** and **b** differ for project types.
+
+- Project Types in COCOMO
+
+  1. **Organic**: Simple projects, small teams, well-understood problems (e.g., payroll systems).
+  2. **Semi-detached**: Moderately complex, mixed teams (e.g., medium business systems).
+  3. **Embedded**: Complex, real-time systems with stringent requirements.
+
+---
+
+## Effort Estimation Example
+
+For a 25 KLOC organic project:
+- Constants for organic project: **a = 2.4**, **b = 1.05**
+- Effort = `2.4 * (25)^1.05 ≈ 61.56 person-months`
+
+
+## Development Time Estimation
+
+Development time (TDEV):
+- TDEV = `c * (Effort)^d`
+- Constants: **c = 2.5**, **d = 0.38**
+- Time = `2.5 * (61.56)^0.38 ≈ 13.36 months`
+
+---
+
+## COCOMO Advantages
+
+- Objective estimates from historical data.
+- Adaptable to different project types.
+- Accounts for various development factors (personnel, tools, etc.).
+
+## COCOMO Limitations
+
+- Relies on accurate size estimation.
+- Historical data may not suit modern practices.
+- Assumes equal contribution of all code to effort.
 
 ---
 
