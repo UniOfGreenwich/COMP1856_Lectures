@@ -1,21 +1,21 @@
 #! /usr/bin/env bash
 MODULE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]%/*}" )" &> /dev/null && pwd )
 
-LECTURE_FOLDER=${MODULE_DIR}/$1
+LECTURE_FOLDER=${MODULE_DIR}/content/$1
 
 # default name is $1 if $2 not supplied
 LECTURE_FILENAME=${2:-$1}
 
 if [[ ! -d ${LECTURE_FOLDER} ]];then
-	mkdir -p ${LECTURE_FOLDER}/figures
+	mkdir ${LECTURE_FOLDER}
 fi
 
 source ${MODULE_DIR}/config
 
 cat >> ${LECTURE_FOLDER}/${LECTURE_FILENAME}.md << EOF
 ---
-title: ${LECTURE_FILENAME}
-description: ${LECTURE_FILENAME}
+title: DOCUMENT TITLE
+description: DESCRIPTION OF DOCUMENT
 class: gaia
 _class:
   - lead
@@ -36,6 +36,10 @@ style: |
       border: none!important;
       vertical-align: middle;
     }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: "$modulecode | $modulename"
 size: 16:9
 paginate: true
 _paginate: false
@@ -43,18 +47,18 @@ marp: true
 math: true
 ---
 
-# ${LECTURE_FILENAME}
+<!-- _footer: "" -->
 
-    Course Code: $coursecode
+# LECTURE TITLE
 
-    Course Name: $coursename
+    Module Code: $modulecode
 
-    Credits: $credits
+    Module Name: $modulename
 
-    Module Leader: $moduleleader
+    Lecturer: $moduleleader
 
 ---
 EOF
 
 # declutter environment variables
-unset $coursecode $coursename $credits $moduleleader
+unset $coursecode $coursename $lecturer
